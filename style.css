@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,12 +12,17 @@ body {
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
 
+.menu-mobile-icon {
+    height: 40px;
+    display: none;
+}
+
 .cabecalho {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-around;
-padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
 
 }
 
@@ -39,7 +44,7 @@ padding: 24px;
 
 .conteudo {
     margin-bottom: 48px;
-    border-top: 0.4px solid  #FFF2E7;
+    border-top: 0.4px solid #FFF2E7;
 }
 
 .conteudo-principal {
@@ -48,7 +53,7 @@ padding: 24px;
     align-items: center;
     justify-content: space-around;
 }
- 
+
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
@@ -69,7 +74,7 @@ padding: 24px;
     color: #ECD6C4;
 }
 
-.conteudo-principal-escrito-botao{
+.conteudo-principal-escrito-botao {
     background: #ECD6C4;
     width: 180px;
     height: 60px;
@@ -81,9 +86,11 @@ padding: 24px;
     font-size: 24px;
     color: #2F2325;
 }
+
 .conteudo-principal-escrito-botao:hover {
-background-color: rgba(236, 214, 196, 0.53);
+    background-color: rgba(236, 214, 196, 0.53);
 }
+
 .conteudo-principal-imagem {
     height: 430px;
 }
@@ -119,7 +126,66 @@ background-color: rgba(236, 214, 196, 0.53);
 }
 
 .rodape-imagem {
-height: 48px;
-display: block;
-margin: 0 auto;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cabecalho {
+        justify-content: space-between;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+
+    }
+
+    .menu-mobile-icon {
+        display: block;
+    }
+
+    .cabecalho-menu {
+        display: none;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: end;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 90%;
+        height: 260px;
+        z-index: 980;
+        background-color: rgba(255, 255, 255, 0.96);
+        padding-right: 40px;
+        padding-top: 20px;
+        border-radius: 20px;
+    }
+
+    .cabecalho-menu-item {
+        color: #2f2325;
+        border-bottom: 0.4px solid #8e5d52;
+    }
+
+    .conteudo {
+        padding: 17px;
+    }
+
+    .conteudo-principal-imagem {
+        height: 400px;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
 }

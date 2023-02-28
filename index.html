@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um bot que irá moderar e deixar sua comunidade segura e de uma jeito fácil">
+    <meta name="description" content="Um bot que irá moderar e deixar sua comunidade segura e de uma jeito fácil">  
     <title>Balle Bot - Modere sua comunidade do Discord</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="site-script.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="logo.svg" alt="Logo da comunidade Ballerini">
-        <nav class="cabecalho-menu">
+        <nav class="cabecalho-menu" id="menu">
             <a class="cabecalho-menu-item"> Comunidade Ballerini </a>
             <a class="cabecalho-menu-item"> Tutotial</a>
             <a class="cabecalho-menu-item"> Open source</a>
             <a class="cabecalho-menu-item"> Comandos</a>
         </nav>
-
+        <img onclick="mostraOuEscondeMenu()" class="menu-mobile-icon" src="mostraOuEscondeMenu.jpg" alt="menu"/>
 
     </header>
 
